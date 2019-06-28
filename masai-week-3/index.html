@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Ubuntu&display=swap" rel="stylesheet">
+  <style media="screen">
+    body {
+      width: 2000px;
+      margin: 0 auto;
+    }
+
+    .font_size {
+      font-size: 40px;
+    }
+
+    .bg_ui {
+      background-image: url(resource/bg_img.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .container_div {
+      background-color: rgba(223, 228, 234, 0.5);
+      height: 2000px;
+      width: 1000px;
+      border-radius: 10px;
+      margin: 100px 250px;
+    }
+
+    .h1_container {
+      background-color: rgba(223, 228, 234, 0.6);
+      width: 1100px;
+      border-radius: 10px;
+      padding-left: 20px;
+    }
+
+    h1 {
+      font-family: 'Acme', sans-serif;
+      font-size: 100px;
+      width: 1000px;
+      margin-top: 100px;
+    }
+
+    .float {
+      float: left;
+    }
+
+    .clear_float {
+      clear: left;
+      float: left;
+    }
+    .margin_top{
+      margin-top: 30px;
+    }
+
+    .input {
+      width: 600px;
+      height: 30px;
+      margin-left:20px;
+      font-size: 30px;
+    }
+    .show_div{
+      font-size:20px;
+      font-family: 'Ubuntu', sans-serif;
+      color:#fff;
+      width:100%;
+    }
+    button{
+      width:180px;
+      height:50px;
+      margin-left:20px;
+      margin-top: 50px;
+      font-size: 24px;
+    }
+  .btn_bg{
+    background-color: rgba(255, 71, 87,1.0);
+    color:#fff;
+  }
+  .btn2_bg{
+    background-color: rgba(247, 241, 227,1.0)
+  }
+    .bg_green{
+      background-color:rgba(123, 237, 159,1.0);
+    }
+    .bg_thick_green{
+      background-color: rgba(46, 213, 115,1.0);
+    }
+  </style>
+  <title>Health Adivisor</title>
+</head>
+
+<body class="bg_ui">
+  <div class="h1_container">
+    <h1>You are what you eat!</h1>
+  </div>
+  <div class="container_div">
+    <div class="">
+      <div class="float">
+        <label class="font_size margin_top" for="food_input">Food Intake</label>
+        <input  id="gained_cal_in" type="text" class="input margin_top font_size" placeholder="enter the food intake" name="" value="">
+        <label class="font_size margin_top" for="">Calories Intake</label>
+        <select id="gained_cal" style="font-size:30px;" class="margin_top" name="" placeholder="amount of food intake">
+          <option value="0">select the amount of calories </option>
+          <option value=200>200</option>
+          <option value=400>400</option>
+          <option value=600>600</option>
+          <option value="800">800</option>
+          <option value="1000 ">1000</option>
+          <option value="1000">1200</option>
+          <option value="1400">1400</option>
+          <option value="1600">1600</option>
+          <option value="1800">1800</option>
+          <option value="2000">2000</option>
+          <option value="2200">2200</option>
+          <option value="2400">2400</option>
+          <option value="2600">2600</option>
+          <option value="2800">2800</option>
+          <option value="3000">3000</option>
+          <option value="3200">3200</option>
+          <option value="3400">3400</option>
+          <option value="3600">3600</option>
+          <option value="3800">3800</option>
+          <option value="4000">4000</option>
+          <option value="4200">4200</option>
+          <option value="4400">4400</option>
+          <option value="4600">4600</option>
+          <option value="4800">4800</option>
+          <option value="5000">5000</option>
+          <option value="5200">5200</option>
+          <option value="5400">5400</option>
+          <option value="5600">5600</option>
+          <option value="5800">5800</option>
+          <option value="6000">6000</option>
+          <option value="6200">6200</option>
+          <option value="6400">6400</option>
+          <option value="6600">6600</option>
+          <option value="6800">6800</option>
+          <option value="7000">7000</option>
+          <option value="7200">7200</option>
+          <option value="7400">7400</option>
+          <option value="7600">7600</option>
+          <option value="7800">7800</option>
+          <option value="8000">8000</option>
+          <option value="8200">8200</option>
+          <option value="8400">8400</option>
+          <option value="8600">8600</option>
+          <option value="8800">8800</option>
+          <option value="9000">9000</option>
+          <option value="9200">9200</option>
+          <option value="9400">9400</option>
+          <option value="9600">9600</option>
+          <option value="9800">9800</option>
+          <option value="9900">9900</option>
+          <option value="10000">10000</option>
+          <option value="10200">10200</option>
+          <option value="10400">10400</option>
+          <option value="10600">10600</option>
+          <option value="10800">10800</option>
+          <option value="11000">11000</option>
+          <option value="11200">11200</option>
+        </select>
+      </div>
+      <div class="clear_float">
+        <label class="font_size margin_top" for="">Calories Spent</label>
+        <input id="spent_cal_in"class="font_size input margin_top" type="text" name="" value="" placeholder="enter where does you lose">
+
+
+        <label class="font_size margin_top" for="">Exercise You Do</label>
+        <select id="spent_cal"  style="font-size:30px;" class="margin_top" name="">
+          <option value="0">select the amount of calories </option>
+          <option value=200>200</option>
+          <option value=400>400</option>
+          <option value=600>600</option>
+          <option value="800">800</option>
+          <option value="1000 ">1000</option>
+          <option value="1000">1200</option>
+          <option value="1400">1400</option>
+          <option value="1600">1600</option>
+          <option value="1800">1800</option>
+          <option value="2000">2000</option>
+          <option value="2200">2200</option>
+          <option value="2400">2400</option>
+          <option value="2600">2600</option>
+          <option value="2800">2800</option>
+          <option value="3000">3000</option>
+          <option value="3200">3200</option>
+          <option value="3400">3400</option>
+          <option value="3600">3600</option>
+          <option value="3800">3800</option>
+          <option value="4000">4000</option>
+          <option value="4200">4200</option>
+          <option value="4400">4400</option>
+          <option value="4600">4600</option>
+          <option value="4800">4800</option>
+          <option value="5000">5000</option>
+          <option value="5200">5200</option>
+          <option value="5400">5400</option>
+          <option value="5600">5600</option>
+          <option value="5800">5800</option>
+          <option value="6000">6000</option>
+          <option value="6200">6200</option>
+          <option value="6400">6400</option>
+          <option value="6600">6600</option>
+          <option value="6800">6800</option>
+          <option value="7000">7000</option>
+          <option value="7200">7200</option>
+          <option value="7400">7400</option>
+          <option value="7600">7600</option>
+          <option value="7800">7800</option>
+          <option value="8000">8000</option>
+          <option value="8200">8200</option>
+          <option value="8400">8400</option>
+          <option value="8600">8600</option>
+          <option value="8800">8800</option>
+          <option value="9000">9000</option>
+          <option value="9200">9200</option>
+          <option value="9400">9400</option>
+          <option value="9600">9600</option>
+          <option value="9800">9800</option>
+          <option value="9900">9900</option>
+          <option value="10000">10000</option>
+          <option value="10200">10200</option>
+          <option value="10400">10400</option>
+          <option value="10600">10600</option>
+          <option value="10800">10800</option>
+          <option value="11000">11000</option>
+          <option value="11200">11200</option>
+        </select>
+      </div>
+      <button id="data_btn" class="btn2_bg clear_float margin_top" type="button" name="button">Enter the data</button>
+      <button id="result_btn"class=" btn_bg margin_top float" type="button" name="button">Calculate</button>
+
+      <div id="show" class="clear_float show_div">
+
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+document.getElementById('data_btn').addEventListener("click",data)
+var color_switch=true
+
+
+function data(){
+  //input by user
+  var gain_in=document.getElementById('gained_cal_in').value
+  var gain=Number(document.getElementById('gained_cal').value)
+  var spent_in=document.getElementById('spent_cal_in').value
+  var spent=Number(document.getElementById("spent_cal").value)
+
+
+//created to Calculate
+var para_1=document.createElement("p")
+
+document.getElementById('show').appendChild(para_1)
+para_1.style.fontSize="30px";
+var cal= Number(gain)-Number(spent)
+var gained_or_lost
+if(gain>spent){
+gained_or_lost=cal+" " +">"+ "Remains gained"
+//document.getElementById('gained_cal_in').value=
+}else if(spent>gain){
+  gained_or_lost=cal+" "+"<" + "Remains lost"
+}else{
+  gained_or_lost=cal+" "+"=" + "Remains Equal"
+
+}
+para_1.textContent="Consumed "+"  "+gain_in+"  "+"gained"+"  "+gain+"  "+"cal"+"  "+"Spent in"+"  "+spent_in+"  "+"loosed"+spent+"  "+"cal"+
+" "+" "+" "+"Your calories of"+gained_or_lost
+if(color_switch){
+  para_1.style.backgroundColor="rgba(123, 237, 159,1.0)"
+  color_switch=false
+}else{
+  para_1.style.backgroundColor="rgba(46, 213, 115,1.0)"
+  color_switch=true
+}
+document.getElementById('gained_cal_in').value=""
+document.getElementById('gained_cal').value=0
+document.getElementById('spent_cal_in').value=""
+document.getElementById("spent_cal").value=0
+}
+
+document.getElementById('result_btn').addEventListener("click",calc)
+function calc(){
+  //input by user
+  var gain_in=document.getElementById('gained_cal_in').value
+  var gain=Number(document.getElementById('gained_cal').value)
+  var spent_in=document.getElementById('spent_cal_in').value
+  var spent=Number(document.getElementById("spent_cal").value)
+
+var gained=0;
+gained+=gain;
+var loosed=0;
+loosed+=spent;
+
+var sub=gained-loosed
+var fat=sub/7000
+
+var heading=document.createElement("p")
+document.getElementById('show').appendChild(heading)
+heading.style.fontSize="50px"
+heading.style.backgroundColor="rgba(255, 121, 63,1.0)"
+if(gained>loosed){
+  heading.textContent="You Gained"+" "+ Math.floor(fat)+ " "+" "+"Kgs"+"of Fat"
+}else if(gained<loosed){
+  heading.textContent="You lost"+" "+ Math.floor(fat)+ " "+" "+"Kgs"+"of Fat"
+}else if(gained==loosed){
+  heading.textContent="You Gained"+ " "+0 + " "+" "+"Kgs"+" "+"of Fat"
+
+}
+
+
+}
+
+</script>
+
+</body>
+
+</html>
